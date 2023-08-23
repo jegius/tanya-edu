@@ -1,0 +1,23 @@
+.menu a {
+    text-decoration: none;
+    display: block;
+}
+.menu li {
+    margin-right:80px;
+    list-style: none;
+    display: inline-block;
+}
+.top {
+    padding: 30px 280px 0 280px;
+}
+.logo {
+    display: inline-block;
+}
+.menu {
+    display: inline-block;
+    position: absolute;
+    left: 37%;
+}
+.search {
+    float: right
+}
