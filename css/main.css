@@ -1,23 +1,130 @@
 .menu a {
     text-decoration: none;
-    display: block;
+    color: black
 }
 .menu li {
-    margin-right:80px;
+    margin-right: 5rem;
     list-style: none;
     display: inline-block;
 }
-.top {
-    padding: 30px 280px 0 280px;
+.menu-top {
+    width: 70rem;
+    height: 3.625rem;
+    display: block;
+    margin: 40px auto 30px;
+    top: 2.438rem;
+    left: 23.313rem;
 }
-.logo {
-    display: inline-block;
+#menu-logo {
+    float: left;
+    display: block;
+    margin-top: 14px;
 }
 .menu {
-    display: inline-block;
-    position: absolute;
-    left: 37%;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
 }
-.search {
-    float: right
+#cat {
+    float: right;
+    display: block;
+    margin-top: 8px
+}
+#search {
+    position: absolute;
+    display: block;
+    margin-left: 63rem;
+    margin-top: 10px
+}
+#home {
+    color: #FF5324;
+}
+.pictures {
+    width: 115.468rem;
+    height: 52.125rem;
+    background-color: #F9F6F4;
+    position: relative;
+    margin: auto;
+}
+.right-pictures {
+    float: right;
+}
+#man {
+    margin-right: 20px;
+}
+#girl {
+    margin-right: 90px;
+    float: inherit;
+    margin-top: 70px;
+}
+#right-text {
+    width: 340px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: left;
+    position: absolute;
+    margin-left: 1392px;
+    margin-top: 585px;
+}
+#left-big-text {
+    width: 550px;
+    text-align: left;
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 109px;
+    font-family: Montserrat, sans-serif;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 280px;
+}
+#bigger {
+    color: #F54C1E;
+}
+#small-text {
+    width: 540px;
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 260px;
+    border-left: 2px solid #000000;
+    padding-left: 22px;
+}
+#uzor {
+    position: absolute;
+    margin-top: 120px;
+}
+#uzorus {
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 110px;
+}
+#vektor-1 {
+    position: absolute;
+}
+#vektor-2 {
+    position: absolute;
+    margin-top: 40px;
+}
+#vektor-3 {
+    position: absolute;
+    margin-top: 80px;
+}
+#vektor-4 {
+    position: absolute;
+    margin-top: 120px;
+}
+.design {
+    width: 1172px;
+    height: 859px;
+    top: 1159px;
+    left: 373px;
+    position: relative;
 }
