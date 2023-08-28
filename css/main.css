@@ -3,40 +3,34 @@
     color: black
 }
 .menu li {
-    margin-right: 5rem;
+    margin-right: 4rem;
     list-style: none;
     display: inline-block;
 }
 .menu-top {
-    width: 70rem;
-    height: 3.625rem;
-    display: block;
-    margin: 40px auto 30px;
-    top: 2.438rem;
-    left: 23.313rem;
+    display: flex;
+    min-height: 5rem;
+    max-width: 55rem;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: auto;
 }
-#menu-logo {
-    float: left;
-    display: block;
-    margin-top: 14px;
+.logo {
+    display: inline-block;
 }
 .menu {
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
-    line-height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
-#cat {
-    float: right;
-    display: block;
-    margin-top: 8px
-}
-#search {
-    position: absolute;
-    display: block;
-    margin-left: 63rem;
-    margin-top: 10px
+.buttons {
+    display: flex;
+    min-width: 7rem;
+    justify-content: space-between;
 }
 #home {
     color: #FF5324;
@@ -48,18 +42,18 @@
     position: relative;
     margin: auto;
 }
-.right-pictures {
+.pictures-right {
     float: right;
 }
-#man {
+.big-pic {
     margin-right: 20px;
 }
-#girl {
+.min-pic {
     margin-right: 90px;
     float: inherit;
     margin-top: 70px;
 }
-#right-text {
+.right-text {
     width: 340px;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -70,7 +64,7 @@
     margin-left: 1392px;
     margin-top: 585px;
 }
-#left-big-text {
+.left-big-text {
     width: 550px;
     text-align: left;
     font-size: 78px;
@@ -84,7 +78,7 @@
 #bigger {
     color: #F54C1E;
 }
-#small-text {
+.small-text {
     width: 540px;
     font-family: Montserrat, sans-serif;
     font-size: 22px;
@@ -97,27 +91,27 @@
     border-left: 2px solid #000000;
     padding-left: 22px;
 }
-#uzor {
+.uzor {
     position: absolute;
     margin-top: 120px;
 }
-#uzorus {
+.uzorus {
     position: absolute;
     margin-top: 550px;
     margin-left: 110px;
 }
-#vektor-1 {
+.vektor-1 {
     position: absolute;
 }
-#vektor-2 {
+.vektor-2 {
     position: absolute;
     margin-top: 40px;
 }
-#vektor-3 {
+.vektor-3 {
     position: absolute;
     margin-top: 80px;
 }
-#vektor-4 {
+.vektor-4 {
     position: absolute;
     margin-top: 120px;
 }
