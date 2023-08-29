@@ -10,7 +10,7 @@
 .menu-top {
     display: flex;
     min-height: 5rem;
-    max-width: 55rem;
+    max-width: 70rem;
     justify-content: space-between;
     align-items: baseline;
     margin: auto;
@@ -35,90 +35,133 @@
 #home {
     color: #FF5324;
 }
-.pictures {
-    width: 115.468rem;
-    height: 52.125rem;
+.back {
+    max-height: 60rem;
     background-color: #F9F6F4;
-    position: relative;
-    margin: auto;
 }
-.pictures-right {
-    float: right;
+.pictures {
+    max-width: 115.468rem;
+    min-height: 48rem;
+    max-height: 55rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 5rem 0 19rem;
 }
-.big-pic {
-    margin-right: 20px;
-}
-.min-pic {
-    margin-right: 90px;
-    float: inherit;
-    margin-top: 70px;
+.right {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 30px;
 }
 .right-text {
     width: 340px;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 600;
-    line-height: 29px;
-    text-align: left;
-    position: absolute;
-    margin-left: 1392px;
-    margin-top: 585px;
+    line-height: 28px;
 }
-.left-big-text {
-    width: 550px;
+.big-pic {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+.left-text {
+    max-width: 540px;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 50px;
+}
+.left-text-big {
     text-align: left;
     font-size: 78px;
     font-weight: 700;
-    line-height: 109px;
     font-family: Montserrat, sans-serif;
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 280px;
+    line-height: 109px;
 }
 #bigger {
     color: #F54C1E;
 }
 .small-text {
-    width: 540px;
     font-family: Montserrat, sans-serif;
     font-size: 22px;
     font-weight: 600;
-    line-height: 40px;
-    text-align: left;
-    position: absolute;
-    margin-top: 440px;
-    margin-left: 260px;
     border-left: 2px solid #000000;
     padding-left: 22px;
+    line-height: 39px;
 }
 .uzor {
     position: absolute;
-    margin-top: 120px;
+    float: left;
+    margin-top: 100px;
 }
 .uzorus {
     position: absolute;
-    margin-top: 550px;
-    margin-left: 110px;
+    margin-top: 530px;
+    margin-left: 140px;
 }
-.vektor-1 {
+.vector-1 {
     position: absolute;
 }
-.vektor-2 {
+.vector-2 {
     position: absolute;
     margin-top: 40px;
 }
-.vektor-3 {
+.vector-3 {
     position: absolute;
     margin-top: 80px;
 }
-.vektor-4 {
+.vector-4 {
     position: absolute;
     margin-top: 120px;
 }
 .design {
-    width: 1172px;
-    height: 859px;
-    top: 1159px;
-    left: 373px;
-    position: relative;
+    max-width: 1300px;
+    max-height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.uzoris {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 800px;
+}
+.design-text {
+    flex: 100%;
+    max-width: 800px;
+}
+.pictures2 {
+    max-width: 1199px;
+    max-height: 450px;
+    display: flex;
+    margin-top: 30px;
+}
+.design-text-big {
+    font-family: Montserrat, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0;
+    text-align: left;
+    max-width: 500px;
+}
+.design-text-small {
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: left;
+    max-width: 740px;
+}
+#cd {
+    color: #F54C1E;
+}
+.pic-door {
+    justify-self: flex-start;
+}
+.pic-block {
+    justify-self: flex-end;
+    margin-top: 40px;
+    margin-left: 20px;
 }
