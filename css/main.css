@@ -1,22 +1,46 @@
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 .menu a {
     text-decoration: none;
     color: black
+}
+.menu a:hover {
+    transform: scale(0);
+    transition: tranform .3s ease-in-out;
+    color: #FF5324;
 }
 .menu li {
     margin-right: 4rem;
     list-style: none;
     display: inline-block;
 }
-.menu-top {
+.menu li::after {
+    content: "";
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #FF5324;
+    transform: scale(0);
+    transition: tranform .3s ease-in-out;
+    position: absolute;
+}
+.menu li:hover:after {
+    transform: scale(1);
+}
+.header {
     display: flex;
-    min-height: 5rem;
     max-width: 70rem;
     justify-content: space-between;
     align-items: baseline;
     margin: auto;
-}
-.logo {
-    display: inline-block;
 }
 .menu {
     text-align: center;
@@ -32,15 +56,10 @@
     min-width: 7rem;
     justify-content: space-between;
 }
-#home {
-    color: #FF5324;
-}
 .back {
-    max-height: 60rem;
     background-color: #F9F6F4;
 }
 .pictures {
-    max-width: 115.468rem;
     min-height: 48rem;
     max-height: 55rem;
     display: flex;
@@ -55,7 +74,7 @@
     margin-top: 30px;
 }
 .right-text {
-    width: 340px;
+    max-width: 340px;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -71,14 +90,14 @@
     text-align: left;
     margin-top: 50px;
 }
-.left-text-big {
+.big-text {
     text-align: left;
     font-size: 78px;
     font-weight: 700;
     font-family: Montserrat, sans-serif;
     line-height: 109px;
 }
-#bigger {
+.bigger {
     color: #F54C1E;
 }
 .small-text {
@@ -99,40 +118,32 @@
     margin-top: 530px;
     margin-left: 140px;
 }
-.vector-1 {
+.vector1 {
     position: absolute;
 }
-.vector-2 {
+.vector2 {
     position: absolute;
     margin-top: 40px;
 }
-.vector-3 {
+.vector3 {
     position: absolute;
     margin-top: 80px;
 }
-.vector-4 {
+.vector4 {
     position: absolute;
     margin-top: 120px;
 }
 .design {
-    max-width: 1300px;
-    max-height: 900px;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
 }
-.uzoris {
+.marker {
     position: absolute;
-    margin-top: 420px;
-    margin-left: 800px;
+    margin: 420px 0 0 800px;
 }
-.design-text {
-    flex: 100%;
-    max-width: 800px;
-}
-.pictures2 {
-    max-width: 1199px;
-    max-height: 450px;
+.design-pictures {
     display: flex;
     margin-top: 30px;
 }
@@ -154,14 +165,10 @@
     text-align: left;
     max-width: 740px;
 }
-#cd {
+.cd {
     color: #F54C1E;
 }
-.pic-door {
-    justify-self: flex-start;
-}
-.pic-block {
-    justify-self: flex-end;
+.block {
     margin-top: 40px;
     margin-left: 20px;
 }
