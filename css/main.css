@@ -1,38 +1,28 @@
-input {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    background: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-.menu a {
+.header__nav a {
     text-decoration: none;
-    color: black
+    color: #000000
 }
-.menu a:hover {
+.header__nav a:hover {
     transform: scale(0);
     transition: tranform .3s ease-in-out;
     color: #FF5324;
 }
-.menu li {
+.header__nav li {
     margin-right: 4rem;
     list-style: none;
     display: inline-block;
 }
-.menu li::after {
+.header__nav li::after {
     content: "";
-    height: 7px;
-    width: 7px;
+    height: .438rem;
+    width: .438rem;
     border-radius: 50%;
     background-color: #FF5324;
     transform: scale(0);
-    transition: tranform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
     position: absolute;
 }
-.menu li:hover:after {
+.header__nav li:hover:after {
     transform: scale(1);
 }
 .header {
@@ -42,7 +32,7 @@ input {
     align-items: baseline;
     margin: auto;
 }
-.menu {
+.header__nav {
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
@@ -51,7 +41,7 @@ input {
     justify-content: center;
     align-items: baseline;
 }
-.buttons {
+.header__actions {
     display: flex;
     min-width: 7rem;
     justify-content: space-between;
@@ -67,117 +57,112 @@ input {
     align-items: baseline;
     margin: 0 5rem 0 19rem;
 }
-.right {
+.pictures__right {
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 .right-text {
-    max-width: 340px;
+    max-width: 21.25rem;
     font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    line-height: 28px;
 }
 .big-pic {
     align-self: flex-start;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
-.left-text {
-    max-width: 540px;
+.pictures__left-text {
+    max-width: 33.75rem;
     flex-direction: column;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .big-text {
     text-align: left;
-    font-size: 78px;
+    font-size: 4.875rem;
     font-weight: 700;
     font-family: Montserrat, sans-serif;
-    line-height: 109px;
 }
 .bigger {
     color: #F54C1E;
 }
 .small-text {
     font-family: Montserrat, sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 600;
-    border-left: 2px solid #000000;
-    padding-left: 22px;
-    line-height: 39px;
+    border-left: .125rem solid #000000;
+    padding-left: 1.375rem;
 }
-.uzor {
+.vectors__uzor {
     position: absolute;
     float: left;
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
-.uzorus-1 {
+.vectors__uzorus {
     position: absolute;
-    margin-top: 530px;
-    margin-left: 140px;
+    margin-top: 33.125rem;
+    margin-left: 8.75rem;
 }
-.vector1 {
+.vectors__vector1 {
     position: absolute;
 }
-.vector2 {
+.vectors__vector2 {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
-.vector3 {
+.vectors__vector3 {
     position: absolute;
-    margin-top: 80px;
+    margin-top: 5rem;
 }
-.vector4 {
+.vectors__vector4 {
     position: absolute;
-    margin-top: 120px;
+    margin-top: 7.5rem;
 }
 .design {
-    max-width: 1200px;
+    max-width: 75rem;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
 }
-.marker {
+.design__marker {
     position: absolute;
-    margin: 420px 0 0 800px;
+    margin: -5rem 0 0 50rem;
 }
-.design-pictures {
+.design__pictures {
     display: flex;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
-.design-text-big {
+.text__big {
     font-family: Montserrat, sans-serif;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 96px;
     letter-spacing: 0;
     text-align: left;
-    max-width: 500px;
+    max-width: 31.25rem;
 }
-.design-text-small {
+.text__small {
     font-family: Montserrat, sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 600;
-    line-height: 40px;
     letter-spacing: 0;
     text-align: left;
-    max-width: 740px;
+    max-width: 46.25rem;
 }
 .cd {
     color: #F54C1E;
 }
 .block {
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 2.7rem;
+    margin-left: 1.25rem;
 }
 .frame-text {
     display: flex;
     padding: 1rem 2.5625rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.625rem;
+    gap: .625rem;
     flex-shrink: 0;
     background: #F55529;
     flex-wrap: wrap;
@@ -185,9 +170,9 @@ input {
     width: 73.25rem;
     justify-content: center;
     margin: 5rem auto;
-    box-shadow: -20px 20px; color: #341912;
+    box-shadow: -1.25rem 1.25rem; color: #341912;
 }
-.frame-text1 {
+.frame-text-1 {
     text-align: right;
     font-family: Montserrat, sans-serif;
     font-size: 1.875rem;
@@ -196,7 +181,7 @@ input {
     width: 18.1875rem;
     color: #FFFFFF;
 }
-.frame-text2 {
+.frame-text-2 {
     text-align: right;
     font-family: Montserrat, sans-serif;
     font-size: 1.875rem;
@@ -205,7 +190,7 @@ input {
     width: 26rem;
     color: #FFFFFF;
 }
-.frame-text3 {
+.frame-text-3 {
     text-align: right;
     font-family: Montserrat, sans-serif;
     font-size: 1.875rem;
@@ -215,31 +200,29 @@ input {
     color: #FFFFFF;
 }
 .works {
-    max-width: 1500px;
+    max-width: 93.75rem;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
 }
-.works-text {
+.works__text {
     display: inline-flex;
     align-items: center;
     margin: auto;
     gap: 14.125rem;
 }
-.works-text-1 {
+.works__text-1 {
     font-family: Montserrat, sans-serif;
     font-size: 4rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 150.5%;
     text-decoration-line: underline;
 }
-.works-text-2 {
+.works__text-2 {
     font-family: Montserrat, sans-serif;
     font-size: 1.375rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 180%;
     max-width: 32rem;
 }
 .latest {
@@ -249,9 +232,8 @@ input {
 .columns {
     flex-direction: column;
     justify-content: center;
-    margin: auto;
 }
-.column-1 {
+.columns__column-1 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -260,7 +242,7 @@ input {
     font-style: normal;
     font-weight: 600;
 }
-.column-2 {
+.columns__column-2 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -269,7 +251,7 @@ input {
     font-style: normal;
     font-weight: 600;
 }
-.column-3 {
+.columns__column-3 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -278,8 +260,8 @@ input {
     font-style: normal;
     font-weight: 600;
 }
-.uzorus-2 {
+.works__uzorus {
     position: absolute;
-    margin-left: 80rem;
-    margin-top: 8rem;
+    margin-left: -15rem;
+    margin-top: -4rem;
 }
