@@ -4,6 +4,7 @@
     --white: #FFFFFF;
     --brown: #341912;
     --liteorange: #F9F6F4;
+    --grey: #979797;
 }
 .header__nav a {
     text-decoration: none;
@@ -360,3 +361,109 @@
 .build__play:hover {
     transform: scale(.95);
     box-shadow: 0 0 2rem var(--liteorange);
+}
+.awards__marker {
+    background: url("../images/image 105.png") no-repeat;
+    background-position-x: 72rem;
+}
+.awards {
+    margin-top: 5rem;
+    border-bottom: 2px solid var(--black);
+}
+.awards__columns {
+    display: flex;
+    flex-direction: column;
+    max-width: 48rem;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.awards__columns__s1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 14.25rem;
+}
+.awards__columns__s2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 14.25rem;
+}
+.awards__columns__s3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 14.25rem;
+}
+.awards__columns__s4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 14.25rem;
+}
+.awards p {
+    color: var(--grey);
+    font-family: Montserrat,sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.awards h1 {
+    color: var(--black);
+    font-family: Montserrat,sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.awards a {
+    color: var(--grey);
+    font-family: Montserrat,sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+.awards__h {
+    color: var(--black);
+    font-family: Montserrat,sans-serif;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+    margin-left: 13rem;
+}
+.end {
+    margin-top: 10rem;
+    background-color: var(--liteorange);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.end__columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: auto;
+}
+.end p {
+    color: var(--black);
+    font-family: Montserrat,sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.end h1 {
+    color: var(--black);
+    font-family: Montserrat,sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.end__columns__left-up {
+    text-decoration: underline;
+}
+.end__columns__center-links {
+    text-decoration: underline;
+}
+.end__columns__right-contact {
+    text-decoration: underline;
+}
+.hi {
+    color: var(--orange);
+}
