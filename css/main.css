@@ -75,7 +75,7 @@
     cursor: pointer;
 }
 
-.pictures {
+.pictures__content {
     min-height: 48rem;
     max-height: 55rem;
     display: flex;
@@ -84,18 +84,14 @@
     margin: 0 5rem 0 19rem;
 }
 
-.pictures__right {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-top: 1.875rem;
-}
-
-.right__text {
+.content__righttext {
     max-width: 21.25rem;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 600;
+    align-self: end;
+    margin-bottom: 7rem;
+    text-align: left;
 }
 
 .big-pic {
@@ -103,7 +99,7 @@
     margin-top: 1.25rem;
 }
 
-.pictures__lefttext {
+.content__lefttext {
     max-width: 33.75rem;
     flex-direction: column;
     text-align: left;
@@ -129,26 +125,19 @@
     padding-left: 1.375rem;
 }
 
-.back {
+.pictures {
     background-color: var(--liteorange);
     background-image: url("../images/image 105.png"),
     url("../images/image 107.png"),
     url("../images/Vector 1.png"),
     url("../images/Vector 2.png"),
     url("../images/Vector 3.png"),
-    url("../images/Vector 3.png");
+    url("../images/Vector 3.png"),
+    url("../images/Rectangle 3993.png"),
+    url("../images/Rectangle 3994.png");
     background-repeat: no-repeat;
-    background-position-y: 7rem,
-    31rem,
-    0,
-    2rem,
-    4rem,
-    6rem;
-    background-position-x: 0,
-    11rem,
-    0,
-    0,
-    0;
+    background-position-y: 7rem, 31rem, 0, 2rem, 4rem, 6rem, 0, 5rem;
+    background-position-x: 0, 11rem, 0, 0, 0, 0, 54rem, 86.5rem;
 }
 
 .design {
@@ -156,17 +145,13 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-}
-
-.design__marker {
-    background: url("../images/image 108.png") no-repeat;
-    background-position-y: 20rem;
-    background-position-x: 50rem;
-}
-
-.design__pictures {
-    display: flex;
-    margin-top: 1.875rem;
+    padding-bottom: 33rem;
+    background-image: url("../images/image 108.png"),
+    url("../images/Rectangle 3995.png"),
+    url("../images/Rectangle 3996.png");
+    background-repeat: no-repeat;
+    background-position-y: 18rem, 25rem, 29rem;
+    background-position-x: 50rem, 0, 38rem;
 }
 
 .text__big {
@@ -244,10 +229,15 @@
 }
 
 .works {
-    max-width: 93.75rem;
+    max-width: 95rem;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
+    padding-top: 5rem;
+    background-image: url("../images/image 107.png");
+    background-repeat: no-repeat;
+    background-position-y: 11rem;
+    background-position-x: 86rem;
 }
 
 .works__text {
@@ -278,45 +268,36 @@
     text-decoration-line: underline;
 }
 
-.columns {
+.works__columns {
     flex-direction: column;
-    justify-content: center;
-}
-
-.columns__column1 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
     font-family: Montserrat, sans-serif;
-    font-size: 22px;
+    color: var(--black);
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 600;
 }
 
-.columns__column2 {
+.columns__1 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    font-family: Montserrat, sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
 }
 
-.columns__column3 {
+.columns__2 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    font-family: Montserrat, sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
 }
 
-.works__uzorus {
-    background: url("../images/image 107.png") no-repeat;
-    background-position-y: 8rem;
-    background-position-x: 70rem;
+.columns__3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works__columns a {
+    text-decoration: none;
+    color: var(--black);
 }
 
 .create {
@@ -324,11 +305,12 @@
     display: flex;
     margin: auto;
     justify-content: space-between;
-    padding-top: 9rem;
-}
-
-.marker {
-    background: url("../images/image 108.png") no-repeat;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    background-image: url("../images/Rectangle 4000.png");
+    background-repeat: no-repeat;
+    background-position-y: 10.5rem;
+    background-position-x: 50rem;
 }
 
 .create__text-big {
@@ -371,10 +353,11 @@
     margin-top: 2rem;
     padding-top: 9rem;
     padding-bottom: 9rem;
-    background: url("../images/Rectangle 4001.png");
     display: flex;
     justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle 4001.png");
 }
+
 .build__text {
     color: var(--white);
     text-align: center;
@@ -421,14 +404,13 @@
     margin: auto;
 }
 
-.awards__marker {
-    background: url("../images/image 105.png") no-repeat;
-    background-position-x: 72rem;
-}
-
 .awards {
     margin-top: 5rem;
     border-bottom: 2px solid var(--black);
+    background-image: url("../images/image 105.png");
+    background-repeat: no-repeat;
+    background-position-x: 72rem;
+    background-position-y: 6rem;
 }
 
 .awards__columns {
