@@ -5,26 +5,39 @@
     --brown: #341912;
     --liteorange: #F9F6F4;
     --grey: #979797;
+    --uzororange: url("../images/image 105.png");
+    --spiral: url("../images/image 107.png");
+    --marker: url("../images/image 108.png");
+    --vector-1: url("../images/pictures/Vector 1.png");
+    --vector-2: url("../images/pictures/Vector 2.png");
+    --vector-3: url("../images/pictures/Vector 3.png");
+    --vector-4: url("../images/pictures/Vector 4.png");
+    --suit: url("../images/pictures/Rectangle 3993.png");
+    --workers: url("../images/pictures/Rectangle 3994.png");
+    --door: url("../images/design/Rectangle 3995.png");
+    --works: url("../images/design/Rectangle 3996.png");
+    --women: url("../images/create/Rectangle 4000.png");
+    --video: url("../images/build/video.png");
 }
 
-.header__nav a {
+.nav__menu {
     text-decoration: none;
     color: var(--black)
 }
 
-.header__nav a:hover {
+.nav__menu:hover {
     transform: scale(0);
     transition: tranform .3s ease-in-out;
     color: var(--orange);
 }
 
-.header__nav li {
+.nav__allmenu {
     margin-right: 4rem;
     list-style: none;
     display: inline-block;
 }
 
-.header__nav li::after {
+.nav__allmenu::after {
     content: "";
     height: .438rem;
     width: .438rem;
@@ -82,11 +95,11 @@
     justify-content: space-between;
     align-items: baseline;
     margin: 0 5rem 0 19rem;
+    font-family: Montserrat, sans-serif;
 }
 
 .content__righttext {
     max-width: 21.25rem;
-    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 600;
     align-self: end;
@@ -110,7 +123,6 @@
     text-align: left;
     font-size: 78px;
     font-weight: 700;
-    font-family: Montserrat, sans-serif;
 }
 
 .bigger {
@@ -118,7 +130,6 @@
 }
 
 .lefttext__smalltext {
-    font-family: Montserrat, sans-serif;
     font-size: 22px;
     font-weight: 600;
     border-left: .125rem solid var(--black);
@@ -127,14 +138,14 @@
 
 .pictures {
     background-color: var(--liteorange);
-    background-image: url("../images/image 105.png"),
-    url("../images/image 107.png"),
-    url("../images/Vector 1.png"),
-    url("../images/Vector 2.png"),
-    url("../images/Vector 3.png"),
-    url("../images/Vector 3.png"),
-    url("../images/Rectangle 3993.png"),
-    url("../images/Rectangle 3994.png");
+    background-image: var(--uzororange),
+    var(--spiral),
+    var(--vector-1),
+    var(--vector-2),
+    var(--vector-3),
+    var(--vector-4),
+    var(--suit),
+    var(--workers);
     background-repeat: no-repeat;
     background-position-y: 7rem, 31rem, 0, 2rem, 4rem, 6rem, 0, 5rem;
     background-position-x: 0, 11rem, 0, 0, 0, 0, 54rem, 86.5rem;
@@ -146,29 +157,25 @@
     flex-wrap: wrap;
     margin: auto;
     padding-bottom: 33rem;
-    background-image: url("../images/image 108.png"),
-    url("../images/Rectangle 3995.png"),
-    url("../images/Rectangle 3996.png");
+    background-image: var(--marker),
+    var(--door),
+    var(--works);
     background-repeat: no-repeat;
     background-position-y: 18rem, 25rem, 29rem;
     background-position-x: 50rem, 0, 38rem;
+    font-family: Montserrat, sans-serif;
+    text-align: left;
 }
 
 .text__big {
-    font-family: Montserrat, sans-serif;
     font-size: 64px;
     font-weight: 700;
-    letter-spacing: 0;
-    text-align: left;
     max-width: 31.25rem;
 }
 
 .text__small {
-    font-family: Montserrat, sans-serif;
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: 0;
-    text-align: left;
     max-width: 46.25rem;
 }
 
@@ -194,36 +201,26 @@
     width: 73.25rem;
     justify-content: center;
     margin: 5rem auto;
-    box-shadow: -1.25rem 1.25rem, 1.25rem 1.25rem;;
+    box-shadow: -1.25rem 1.25rem, 1.25rem 1.25rem;
     color: var(--brown);
-}
-
-.frametext-1 {
     text-align: right;
     font-family: Montserrat, sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
+}
+
+.frametext-1 {
     width: 18.1875rem;
     color: var(--white);
 }
 
 .frametext-2 {
-    text-align: right;
-    font-family: Montserrat, sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
     width: 26rem;
     color: var(--white);
 }
 
 .frametext-3 {
-    text-align: right;
-    font-family: Montserrat, sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
     width: 26rem;
     color: var(--white);
 }
@@ -234,10 +231,11 @@
     margin: auto;
     flex-wrap: wrap;
     padding-top: 5rem;
-    background-image: url("../images/image 107.png");
+    background-image: var(--spiral);
     background-repeat: no-repeat;
     background-position-y: 11rem;
     background-position-x: 86rem;
+    font-family: Montserrat, sans-serif;
 }
 
 .works__text {
@@ -245,20 +243,17 @@
     align-items: center;
     gap: 14.125rem;
     margin: auto auto auto 10rem;
+    font-style: normal;
 }
 
 .works__text-1 {
-    font-family: Montserrat, sans-serif;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
     text-decoration-line: underline;
 }
 
 .works__text-2 {
-    font-family: Montserrat, sans-serif;
     font-size: 22px;
-    font-style: normal;
     font-weight: 600;
     max-width: 32rem;
 }
@@ -270,7 +265,6 @@
 
 .works__columns {
     flex-direction: column;
-    font-family: Montserrat, sans-serif;
     color: var(--black);
     font-size: 1.375rem;
     font-style: normal;
@@ -307,31 +301,28 @@
     justify-content: space-between;
     padding-top: 10rem;
     padding-bottom: 2rem;
-    background-image: url("../images/Rectangle 4000.png");
+    background-image: var(--women);
     background-repeat: no-repeat;
     background-position-y: 10.5rem;
     background-position-x: 50rem;
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+    font-style: normal;
 }
 
 .create__text-big {
     color: var(--black);
-    font-family: Montserrat, sans-serif;
     font-size: 50px;
-    font-style: normal;
     font-weight: 700;
     line-height: 150.5%;
     text-decoration-line: underline;
-    text-align: left;
     max-width: 31.25rem;
 }
 
 .create__text-small {
     color: var(--black);
-    font-family: Montserrat, sans-serif;
     font-size: 22px;
-    font-style: normal;
     font-weight: 500;
-    text-align: left;
     max-width: 30rem;
 }
 
@@ -355,7 +346,7 @@
     padding-bottom: 9rem;
     display: flex;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle 4001.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--video);
 }
 
 .build__text {
@@ -407,10 +398,13 @@
 .awards {
     margin-top: 5rem;
     border-bottom: 2px solid var(--black);
-    background-image: url("../images/image 105.png");
+    background-image: var(--uzororange);
     background-repeat: no-repeat;
     background-position-x: 72rem;
     background-position-y: 6rem;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .awards__columns {
@@ -448,35 +442,23 @@
 
 .awards p {
     color: var(--grey);
-    font-family: Montserrat, sans-serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
 }
 
 .awards h1 {
     color: var(--black);
-    font-family: Montserrat, sans-serif;
     font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
 }
 
 .awards a {
     color: var(--grey);
-    font-family: Montserrat, sans-serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
     text-decoration-line: underline;
 }
 
 .awards__h {
     color: var(--black);
-    font-family: Montserrat, sans-serif;
     font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
     text-decoration-line: underline;
     margin-left: 13rem;
 }
@@ -486,6 +468,8 @@
     background-color: var(--liteorange);
     padding-top: 8rem;
     padding-bottom: 8rem;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
 }
 
 .end__columns {
@@ -497,17 +481,13 @@
 
 .end p {
     color: var(--black);
-    font-family: Montserrat, sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 700;
 }
 
 .end h1 {
     color: var(--black);
-    font-family: Montserrat, sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
 }
 
