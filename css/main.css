@@ -289,7 +289,7 @@
     align-items: center;
 }
 
-.works__columns a {
+.column-text {
     text-decoration: none;
     color: var(--black);
 }
@@ -326,7 +326,7 @@
     max-width: 30rem;
 }
 
-.cre {
+.orangecre {
     color: var(--orange);
     text-decoration-line: underline;
 }
@@ -370,8 +370,8 @@
 }
 
 .build__play {
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 6.25rem;
+    min-height: 6.25rem;
     background: var(--orange);
     border-radius: 50%;
     align-self: end;
@@ -386,12 +386,12 @@
     box-shadow: 0 0 1rem var(--liteorange);
 }
 
-.build__play span {
+.play {
     width: 0;
     height: 0;
-    border-top: 20px solid transparent;
-    border-left: 40px solid var(--white);
-    border-bottom: 20px solid transparent;
+    border-top: 1.25rem solid transparent;
+    border-left: 2.5rem solid var(--white);
+    border-bottom: 1.25rem solid transparent;
     margin: auto;
 }
 
@@ -420,37 +420,41 @@
     display: inline-flex;
     align-items: center;
     gap: 14.25rem;
+    padding-bottom: 4.5rem;
 }
 
 .columns__s2 {
     display: inline-flex;
     align-items: center;
     gap: 14.25rem;
+    padding-bottom: 4.5rem;
 }
 
 .columns__s3 {
     display: inline-flex;
     align-items: center;
     gap: 14.25rem;
+    padding-bottom: 4.5rem;
 }
 
 .columns__s4 {
     display: inline-flex;
     align-items: center;
     gap: 14.25rem;
+    padding-bottom: 4.5rem;
 }
 
-.awards p {
+.s-small {
     color: var(--grey);
     font-size: 20px;
 }
 
-.awards h1 {
+.s-big {
     color: var(--black);
     font-size: 32px;
 }
 
-.awards a {
+.s-project {
     color: var(--grey);
     font-size: 20px;
     text-decoration-line: underline;
@@ -479,16 +483,19 @@
     margin: auto;
 }
 
-.end p {
+.columns__center {
+    list-style: none;
+}
+
+.columns__right {
+    list-style: none;
+}
+
+.columns__menu {
     color: var(--black);
     font-size: 30px;
     font-weight: 700;
-}
-
-.end h1 {
-    color: var(--black);
-    font-size: 40px;
-    font-weight: 700;
+    margin-top: 1.5rem;
 }
 
 .columns__left-up {
@@ -497,16 +504,23 @@
 
 .columns__center-links {
     text-decoration: underline;
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .columns__right-contact {
     text-decoration: underline;
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 700;
 }
 
-.hi {
+.orangehi {
     color: var(--orange);
 }
 
 .columns__left {
     max-width: 26rem;
+    margin-top: 1.5rem;
 }
