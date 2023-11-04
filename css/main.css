@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 :root {
     --orange: #FF5324;
     --black: #000000;
@@ -18,7 +20,8 @@
     --works: url("../images/design/Rectangle 3996.png");
     --women: url("../images/create/Rectangle 4000.png");
     --video: url("../images/build/video.png");
-    --item-active: url("../images/header/item-active.svg")
+    --item-active: url("../images/header/item-active.svg");
+    --home-lines: url("../images/home/home-lines.svg")
 }
 
 a {
@@ -30,10 +33,17 @@ ul {
     list-style: none;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100vw;
 }
 
@@ -104,6 +114,79 @@ ul {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    padding-bottom: 10.5rem;
+}
+
+.home_bg {
+    background: var(--uzororange) no-repeat,
+                var(--spiral) no-repeat,
+                var(--home-lines) no-repeat;
+    background-position: 0 8.81rem,
+                         8rem 34rem,
+                         0 0;
+    background-color: var(--liteorange);
+}
+
+.home__header-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 37.75rem;
+    gap: .69rem;
+    padding-left: 1.38rem;
+}
+
+.home__header-block::before {
+    position: absolute;
+    content: "";
+    background: var(--black);
+    width: 0.125rem;
+    height: 11.125rem;
+    transform: translateY(83%);
+    left: 0;
+}
+
+.home__header {
+    line-height: 140%;
+}
+
+.home__header-text {
+    line-height: 180%;
+}
+
+.home__img-man {
+    background: var(--suit) no-repeat;
+    min-width: 30rem;
+    min-height: 41.5rem;
+}
+
+.home__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+.home__img-info {
+    background: var(--workers) no-repeat;
+    background-size: cover;
+    min-width: 22.9375rem;
+    min-height: 31.0625rem;
+}
+
+.home__info-text {
+    max-width: 21rem;
+    align-self: flex-end;
 }
 
 .pictures__content {
@@ -534,6 +617,22 @@ ul {
     font-weight: 600;
 }
 
+.text_bold {
+    font-weight: 700;
+}
+
+.text_size-16 {
+    font-size: 16px;
+}
+
+.text_size-22 {
+    font-size: 22px;
+}
+
 .text_size-30 {
     font-size: 30px;
+}
+
+.text_size-78 {
+    font-size: 78px;
 }
