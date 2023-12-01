@@ -243,15 +243,15 @@ h1 {
 }
 
 .frametext-1 {
-    width: 18rem;
+    max-width: 18rem;
 }
 
 .frametext-2 {
-    width: 26rem;
+    max-width: 26rem;
 }
 
 .frametext-3 {
-    width: 21rem;
+    max-width: 21rem;
 }
 
 .works {
@@ -364,7 +364,7 @@ h1 {
 }
 
 .media__text-p {
-    width: 41.875rem;
+    max-width: 41.875rem;
     line-height: 180%;
 }
 
@@ -378,12 +378,10 @@ h1 {
     border: none;
     cursor: pointer;
     position: relative;
-    transition: 1s ease;
 }
 
 .media__play:hover {
     transform: scale(1.05);
-    transition: 1s ease;
 }
 
 .media__play:hover::before {
@@ -409,9 +407,9 @@ h1 {
 .play {
     width: 0;
     height: 0;
-    border-top: 1.25rem solid transparent;
-    border-left: 2.5rem solid var(--white);
-    border-bottom: 1.25rem solid transparent;
+    border-top: 1rem solid transparent;
+    border-left: 2rem solid var(--white);
+    border-bottom: 1rem solid transparent;
     margin: auto;
 }
 
@@ -420,18 +418,18 @@ h1 {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    max-width: 75rem;
+    max-width: 74rem;
     padding-top: 5rem;
     border-bottom: 2px solid var(--black);
 }
 
 .awards_bg {
     background: var(--pattern-orange) no-repeat;
-    background-position: 55rem 9rem;
+    background-position: 65rem 9rem;
 }
 
 .awards__header {
-    width: 75rem;
+    padding-right: 5rem;
 }
 
 .awards__columns {
@@ -439,7 +437,7 @@ h1 {
     flex-direction: column;
     gap: 2rem;
     max-width: 50rem;
-    padding-top: 3rem;
+    padding-top: 12rem;
 }
 
 .awards__columns__column {
@@ -461,14 +459,16 @@ h1 {
     width: 100%;
     max-height: 43rem;
     padding-top: 10rem;
+    background-clip: content-box;
+    background-color: var(--liteorange);
 }
 
 .end__columns {
     display: flex;
     gap: 12rem;
-    width: 120.5rem;
-    background-color: var(--liteorange);
+    min-width: 92rem;
     padding-bottom: 8rem;
+    padding-top: 10rem;
 }
 
 .end__columns__left {
