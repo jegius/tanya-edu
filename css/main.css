@@ -11,13 +11,13 @@
     --spiral: url("../images/image 107.png");
     --marker: url("../images/image 108.png");
     --item-active: url("../images/header/item-active.svg");
-    --img-home-man: url("../images/pictures/Rectangle 3993.png");
-    --img-home-workers: url("../images/pictures/Rectangle 3994.png");
+    --img-home-man: url("../images/home/Rectangle 3993.png");
+    --img-home-workers: url("../images/home/Rectangle 3994.png");
     --home-lines: url("../images/home/home-lines.svg");
     --img-design-website: url("../images/design/Rectangle 3995.png");
     --img-design-advertisement: url("../images/design/Rectangle 3996.png");
     --img-create-women: url("../images/create/Rectangle 4000.png");
-    --img-media-video: url("../images/build/video.png")
+    --img-media-video: url("../images/media/video.png")
 }
 
 a {
@@ -121,11 +121,11 @@ h1 {
 
 .home_bg {
     background: var(--pattern-orange) no-repeat,
-                var(--spiral) no-repeat,
-                var(--home-lines) no-repeat;
+    var(--spiral) no-repeat,
+    var(--home-lines) no-repeat;
     background-position: 0 8.81rem,
-                         8rem 34rem,
-                         0 0;
+    8rem 34rem,
+    0 0;
     background-color: var(--liteorange);
 }
 
