@@ -1,0 +1,15 @@
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none; /* убирает серую подсветку при активации в некоторых браузерах */
+    -webkit-appearance: none; /* убирает стили браузера в Chrome и Safari */
+    -moz-appearance: none; /* убирает стили браузера в Firefox */
+    appearance: none; /* убирает стили браузера для остальных */
+}
+
+:root {
+    --search: url("/images/header/search.png");
+    --catalog: url("/images/header/catalog.png")
+}
